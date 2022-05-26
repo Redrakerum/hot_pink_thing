@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 5px 1.75px rgba(0, 0, 0, 0.25);
+}
+
+body {
+    background: rgba(123, 5, 123, 0.25);
+    font-size: 2vmin;
+}
+
+
+
+.main-container {
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.sub-container {
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-header {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.main-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3vmin;
+}
+
+input {
+    width: 200px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.72);
+}
+
+
+#register-page-user:hover,
+#register-page-pass:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#submit-button:hover,
+#login-button:hover{
+    background: rgba(245, 245, 245, 0.55);
+    cursor: pointer;
+}
+
+#register-page-user:focus,
+#register-page-pass:focus {
+    outline: 3px solid rgba(0, 0, 0, 0.35);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#submit-button:focus {
+    outline: 3px solid rgba(0, 0, 0, 0.55);
+}
+
+input[type=submit] {
+    background: rgba(245, 245, 245, 0.25);
+    box-shadow: 1px 3px 1.75px rgba(0, 0, 0, 0.18);
+    width: 80px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.92);
+    height: 25px;
+    margin-left: 10px;
+}
+
+#login-button{
+	background: rgba(245,245,245,0.25);
+	box-shadow: 1px 3px 1.75px rgba(0,0,0,0.18);
+	width: 100px;
+	margin-top: 10px;
+	color: rgba(0,0,0,0.92);
+	height: 25px;
+	margin-left: 10px;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/favicon-testing.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/register.css">
+    <title>REGISTER</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="main-header">
+		    <h1 id="header-message">register<br>for<br><%= message %></h1>
+            </div>
+            <div class="main-body">
+                <form class="register-body" action="" method="post">
+                    <label for="register_user">USERNAME:</label>
+                    <input type="text" name="register_user" id="register-page-user" autocomplete="off">
+                    <br>
+                    <label for="register_pass">PASSWORD:</label>
+                    <input type="password" name="register_pass" id="register-page-pass" autocomplete="off">
+                    <br>
+                    <div class="submit-button-container">
+                        <input type="submit" value="SUBMIT" id="submit-button">
+			<button type="button" id="login-button"><a href="/login-page">LOGIN_PAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

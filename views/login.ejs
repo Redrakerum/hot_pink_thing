@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/favicon-testing.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="main-header">
+		    <h1 id="header-message">LOG<br>INTO<br><%= message %></h1>
+            </div>
+            <div class="main-body">
+                <form class="login-body" action="" method="post">
+                    <label for="login_user">USERNAME:</label>
+                    <input type="text" name="login_user" id="login-page-user" autocomplete="off">
+                    <br>
+                    <label for="login_pass">PASSWORD:</label>
+                    <input type="password" name="login_pass" id="login-page-pass" autocomplete="off">
+                    <br>
+                    <div class="submit-button-container">
+                        <input type="submit" value="SUBMIT" id="submit-button">
+			<button type=="button" id="register-button"><a href="/register-page">REGISTER</button>
+			<button type=="button" id="local-mode-button"><a href="/local-mode">LOCAL_MODE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

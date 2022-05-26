@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOT PINK THING</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/localmode.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Hot Pink Thing">
+    <link rel="icon" href="/icons/favicon-testing.jpg" type="image/x-icon">
+</head>
+
+<body onload="startup()">
+    <div class="main-header">
+        <header>
+            <h1 id="header-intro"><button id="login-ham">&#9776</button>Welcome, <span
+                    id="username-name">LOCAL_USER</span></h1>
+            <div class="ham-dropdown" id="ham-dropdown" style="display: none;">
+                <a href="/login-page" id="login-button">LOGIN</a>
+                <a href="/register-page" id="register-button">REGISTER</a>
+                <a href="/search" id="search-button">SEARCH</a>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="container-item">
+            <div class="text-title">
+                <h1 id="article-name">Title</h1>
+            </div>
+            <div class="text-body">
+                <p id="article-content">Body</p>
+            </div>
+        </div>
+    </div>
+    <div class="control-container">
+        <div class="control-container-item">
+            <div class="buttons">
+                <button id="prev-button" onclick="deadvance()">PREVIOUS</button>
+                <button id="next-button" onclick="advance()">NEXT</button>
+                <button id="create">CREATE</button>
+            </div>
+            <div class="page-number">
+                <span id="Current-Page-Number">0</span><span> / </span><span id="Total-Page-Number">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-thing">
+        <div class="footer-container">
+            <div class="footer-buttons">
+                <button id="delete-article">DELETE</button>
+                <button id="delete-all-articles">DELETE ALL</button>
+            </div>
+        </div>
+    </div>
+    <div id="create-modal-background" class="modal-container">
+        <div id="create-modal-id" class="modal-item">
+            <div class="new-title">
+                <input type="text" id="new-article-name" placeholder="New Title" onfocus="this.value=''">
+            </div>
+            <div class="new-body">
+                <textarea type="text" id="new-article-content" name="new-article-content" placeholder="New Body"
+                    onfocus="this.value=''"></textarea>
+            </div>
+        </div>
+        <div class="modal-controls">
+            <div class="modal-control-container">
+                <div class="modal-buttons">
+                    <button id="cancel-create-article">&#10006;</button>
+                    <button id="create-article" type="submit">&#10004;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/localmode.js"></script>
+</body>
+
+</html>
